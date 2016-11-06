@@ -1,0 +1,10 @@
+C:\Users\DuyDev\Documents\Visual Studio 2015\Projects\QLSieuThiDienThoaiPhuongNam\Business\bin\Debug\Business.dll.config
+C:\Users\DuyDev\Documents\Visual Studio 2015\Projects\QLSieuThiDienThoaiPhuongNam\Business\bin\Debug\Business.dll
+C:\Users\DuyDev\Documents\Visual Studio 2015\Projects\QLSieuThiDienThoaiPhuongNam\Business\bin\Debug\Business.pdb
+C:\Users\DuyDev\Documents\Visual Studio 2015\Projects\QLSieuThiDienThoaiPhuongNam\Business\bin\Debug\EntityFramework.dll
+C:\Users\DuyDev\Documents\Visual Studio 2015\Projects\QLSieuThiDienThoaiPhuongNam\Business\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DuyDev\Documents\Visual Studio 2015\Projects\QLSieuThiDienThoaiPhuongNam\Business\bin\Debug\EntityFramework.xml
+C:\Users\DuyDev\Documents\Visual Studio 2015\Projects\QLSieuThiDienThoaiPhuongNam\Business\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DuyDev\Documents\Visual Studio 2015\Projects\QLSieuThiDienThoaiPhuongNam\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+C:\Users\DuyDev\Documents\Visual Studio 2015\Projects\QLSieuThiDienThoaiPhuongNam\Business\obj\Debug\Business.dll
+C:\Users\DuyDev\Documents\Visual Studio 2015\Projects\QLSieuThiDienThoaiPhuongNam\Business\obj\Debug\Business.pdb
