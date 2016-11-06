@@ -37,7 +37,9 @@ namespace Presentation
             }
 
             this.Close();
-            new Thread(() => new frmMain().ShowDialog()).Start();
+            var t = new Thread(() => new frmMain().ShowDialog());
+            t.SetApartmentState(ApartmentState.STA);
+            t.Start();
         }
     }
 }

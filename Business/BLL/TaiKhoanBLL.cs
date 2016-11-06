@@ -29,7 +29,7 @@ namespace Business.BLL
 
         public static bool DaDangNhap()
         {
-            //return _tk != null;
+            return _tk != null;
         }
 
         public static TaiKhoan TaiKhoanDaDangNhap()

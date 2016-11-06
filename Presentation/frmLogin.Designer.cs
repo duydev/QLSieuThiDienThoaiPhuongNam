@@ -53,6 +53,7 @@
             this.txtTenDangNhap.Name = "txtTenDangNhap";
             this.txtTenDangNhap.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtTenDangNhap.Properties.Appearance.Options.UseFont = true;
+            this.txtTenDangNhap.Properties.MaxLength = 50;
             this.txtTenDangNhap.Size = new System.Drawing.Size(459, 34);
             this.txtTenDangNhap.TabIndex = 0;
             // 
@@ -80,6 +81,8 @@
             this.txtMatKhau.Name = "txtMatKhau";
             this.txtMatKhau.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtMatKhau.Properties.Appearance.Options.UseFont = true;
+            this.txtMatKhau.Properties.MaxLength = 50;
+            this.txtMatKhau.Properties.UseSystemPasswordChar = true;
             this.txtMatKhau.Size = new System.Drawing.Size(459, 34);
             this.txtMatKhau.TabIndex = 1;
             // 

@@ -35,7 +35,34 @@ namespace Presentation
             _tk = TaiKhoanBLL.TaiKhoanDaDangNhap();
             _nv = _tk.NhanVien;
 
-            txtTenNhanVien.Caption = _nv.Ten;
+            txtTenNhanVien.Caption = "Nhân viên: " + _nv.Ten;
+            txtQuyen.Caption = "Vai trò: " + _tk.PhanQuyen.Ten;
+        }
+
+        private void btnDangXuat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            TaiKhoanBLL.DangXuat();
+            this.Close();
+            new Thread( () => new frmLogin().ShowDialog() ).Start();
+        }
+
+        private void frmMain_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnTaiKhoanCuaToi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmTaiKhoanCuaToi frm = new frmTaiKhoanCuaToi();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void btnDanhSachLSP_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmDanhSachLSP frm = new frmDanhSachLSP();
+            frm.MdiParent = this;
+            frm.Show();
         }
     }
 }

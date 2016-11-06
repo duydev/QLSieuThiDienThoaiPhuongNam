@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\LoaiSanPhamBLL.cs" />
     <Compile Include="BLL\NhanVienBLL.cs" />
     <Compile Include="BLL\TaiKhoanBLL.cs" />
     <Compile Include="DAL\CT_DonDatHang.cs">
@@ -92,6 +93,7 @@
     <Compile Include="DAL\LoaiSanPham.cs">
       <DependentUpon>DBPhuongNam.tt</DependentUpon>
     </Compile>
+    <Compile Include="DAL\LoaiSanPhamDAL.cs" />
     <Compile Include="DAL\NhaCungCap.cs">
       <DependentUpon>DBPhuongNam.tt</DependentUpon>
     </Compile>
