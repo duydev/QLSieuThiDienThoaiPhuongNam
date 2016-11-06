@@ -80,5 +80,30 @@ namespace Presentation
             TimeSpan diff = DateTime.Now - _dn;
             txtThoiGianSuDung.Caption = string.Format("Thời gian sử dụng: {0} giờ {1} phút {2} giây.", diff.Hours, diff.Minutes, diff.Seconds);
         }
+
+        private void btnDanhSachNCC_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmDanhSachNCC frm = new frmDanhSachNCC();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void btnThemNCC_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmNCC frm = new frmNCC();
+            frm.MdiParent = this;
+            frm.Show();
+            frm.Focus();
+        }
+
+        private void btnDanhSachHSX_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
+        }
+
+        private void btnThemHSX_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
+        }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.txtTenNhanVien = new DevExpress.XtraBars.BarHeaderItem();
@@ -41,10 +42,9 @@
             this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             this.btnDanhSachLSP = new DevExpress.XtraBars.BarButtonItem();
             this.btnThemLSP = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnDanhSachNCC = new DevExpress.XtraBars.BarButtonItem();
+            this.btnDanhSachHSX = new DevExpress.XtraBars.BarButtonItem();
+            this.btnThemNCC = new DevExpress.XtraBars.BarButtonItem();
             this.txtThoiGianSuDung = new DevExpress.XtraBars.BarStaticItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -58,8 +58,9 @@
             this.rPTaiKhoan = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
-            this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager();
-            this.timer1 = new System.Windows.Forms.Timer();
+            this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             this.SuspendLayout();
@@ -80,14 +81,14 @@
             this.barButtonItem5,
             this.btnDanhSachLSP,
             this.btnThemLSP,
-            this.barButtonItem8,
-            this.barButtonItem9,
-            this.barButtonItem10,
-            this.barButtonItem11,
-            this.txtThoiGianSuDung});
+            this.btnDanhSachNCC,
+            this.btnDanhSachHSX,
+            this.btnThemNCC,
+            this.txtThoiGianSuDung,
+            this.barButtonItem6});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ribbonControl1.MaxItemId = 17;
+            this.ribbonControl1.MaxItemId = 18;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
@@ -182,37 +183,31 @@
             this.btnThemLSP.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.btnThemLSP.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnThemLSP_ItemClick);
             // 
-            // barButtonItem8
+            // btnDanhSachNCC
             // 
-            this.barButtonItem8.Caption = "Danh Sách";
-            this.barButtonItem8.Glyph = global::Presentation.Properties.Resources.list;
-            this.barButtonItem8.Id = 12;
-            this.barButtonItem8.Name = "barButtonItem8";
-            this.barButtonItem8.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnDanhSachNCC.Caption = "Danh Sách";
+            this.btnDanhSachNCC.Glyph = global::Presentation.Properties.Resources.list;
+            this.btnDanhSachNCC.Id = 12;
+            this.btnDanhSachNCC.Name = "btnDanhSachNCC";
+            this.btnDanhSachNCC.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnDanhSachNCC.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDanhSachNCC_ItemClick);
             // 
-            // barButtonItem9
+            // btnDanhSachHSX
             // 
-            this.barButtonItem9.Caption = "Danh Sách";
-            this.barButtonItem9.Glyph = global::Presentation.Properties.Resources.list;
-            this.barButtonItem9.Id = 13;
-            this.barButtonItem9.Name = "barButtonItem9";
-            this.barButtonItem9.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnDanhSachHSX.Caption = "Danh Sách";
+            this.btnDanhSachHSX.Glyph = global::Presentation.Properties.Resources.list;
+            this.btnDanhSachHSX.Id = 13;
+            this.btnDanhSachHSX.Name = "btnDanhSachHSX";
+            this.btnDanhSachHSX.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
-            // barButtonItem10
+            // btnThemNCC
             // 
-            this.barButtonItem10.Caption = "Thêm Mới";
-            this.barButtonItem10.Glyph = global::Presentation.Properties.Resources.add;
-            this.barButtonItem10.Id = 14;
-            this.barButtonItem10.Name = "barButtonItem10";
-            this.barButtonItem10.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            // 
-            // barButtonItem11
-            // 
-            this.barButtonItem11.Caption = "Thêm Mới";
-            this.barButtonItem11.Glyph = global::Presentation.Properties.Resources.add;
-            this.barButtonItem11.Id = 15;
-            this.barButtonItem11.Name = "barButtonItem11";
-            this.barButtonItem11.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnThemNCC.Caption = "Thêm Mới";
+            this.btnThemNCC.Glyph = global::Presentation.Properties.Resources.add;
+            this.btnThemNCC.Id = 14;
+            this.btnThemNCC.Name = "btnThemNCC";
+            this.btnThemNCC.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnThemNCC.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnThemNCC_ItemClick);
             // 
             // txtThoiGianSuDung
             // 
@@ -247,15 +242,15 @@
             // 
             // ribbonPageGroup5
             // 
-            this.ribbonPageGroup5.ItemLinks.Add(this.barButtonItem8);
-            this.ribbonPageGroup5.ItemLinks.Add(this.barButtonItem10);
+            this.ribbonPageGroup5.ItemLinks.Add(this.btnDanhSachNCC);
+            this.ribbonPageGroup5.ItemLinks.Add(this.btnThemNCC);
             this.ribbonPageGroup5.Name = "ribbonPageGroup5";
             this.ribbonPageGroup5.Text = "Nhà Cung Cấp";
             // 
             // ribbonPageGroup6
             // 
-            this.ribbonPageGroup6.ItemLinks.Add(this.barButtonItem9);
-            this.ribbonPageGroup6.ItemLinks.Add(this.barButtonItem11);
+            this.ribbonPageGroup6.ItemLinks.Add(this.btnDanhSachHSX);
+            this.ribbonPageGroup6.ItemLinks.Add(this.barButtonItem6);
             this.ribbonPageGroup6.Name = "ribbonPageGroup6";
             this.ribbonPageGroup6.Text = "Hãng Sản Xuất";
             // 
@@ -322,6 +317,14 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // barButtonItem6
+            // 
+            this.barButtonItem6.Caption = "Thêm Mới";
+            this.barButtonItem6.Glyph = global::Presentation.Properties.Resources.add;
+            this.barButtonItem6.Id = 17;
+            this.barButtonItem6.Name = "barButtonItem6";
+            this.barButtonItem6.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
             // frmMain
             // 
             this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.False;
@@ -375,12 +378,12 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup7;
         private DevExpress.XtraBars.BarButtonItem btnDanhSachLSP;
         private DevExpress.XtraBars.BarButtonItem btnThemLSP;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem8;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem9;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem10;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem11;
+        private DevExpress.XtraBars.BarButtonItem btnDanhSachNCC;
+        private DevExpress.XtraBars.BarButtonItem btnDanhSachHSX;
+        private DevExpress.XtraBars.BarButtonItem btnThemNCC;
         private DevExpress.XtraBars.BarStaticItem txtThoiGianSuDung;
         private System.Windows.Forms.Timer timer1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem6;
     }
 }
 

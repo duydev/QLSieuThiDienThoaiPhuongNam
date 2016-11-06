@@ -94,6 +94,18 @@
     <Compile Include="ChildForm\frmDanhSachLSP.Designer.cs">
       <DependentUpon>frmDanhSachLSP.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChildForm\frmDanhSachNCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForm\frmDanhSachNCC.Designer.cs">
+      <DependentUpon>frmDanhSachNCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForm\frmNCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForm\frmNCC.Designer.cs">
+      <DependentUpon>frmNCC.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +134,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="ChildForm\frmDanhSachLSP.resx">
       <DependentUpon>frmDanhSachLSP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForm\frmDanhSachNCC.resx">
+      <DependentUpon>frmDanhSachNCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForm\frmNCC.resx">
+      <DependentUpon>frmNCC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
