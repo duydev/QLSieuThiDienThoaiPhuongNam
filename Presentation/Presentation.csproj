@@ -65,7 +65,9 @@
   <ItemGroup>
     <Reference Include="DevExpress.BonusSkins.v15.1" />
     <Reference Include="DevExpress.Data.v15.1" />
+    <Reference Include="DevExpress.Office.v15.1.Core, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Printing.v15.1.Core" />
+    <Reference Include="DevExpress.RichEdit.v15.1.Core, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Utils.v15.1" />
     <Reference Include="DevExpress.XtraBars.v15.1" />
     <Reference Include="DevExpress.Sparkline.v15.1.Core" />
@@ -73,6 +75,7 @@
     <Reference Include="DevExpress.XtraGrid.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraLayout.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraPrinting.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="EntityFramework.SqlServer">
       <HintPath>..\Business\bin\Debug\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
@@ -88,6 +91,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChildForm\frmDanhSachHSX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForm\frmDanhSachHSX.Designer.cs">
+      <DependentUpon>frmDanhSachHSX.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChildForm\frmDanhSachLSP.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,11 +109,29 @@
     <Compile Include="ChildForm\frmDanhSachNCC.Designer.cs">
       <DependentUpon>frmDanhSachNCC.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChildForm\frmDanhSachSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForm\frmDanhSachSP.Designer.cs">
+      <DependentUpon>frmDanhSachSP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForm\frmHSX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForm\frmHSX.Designer.cs">
+      <DependentUpon>frmHSX.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChildForm\frmNCC.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ChildForm\frmNCC.Designer.cs">
       <DependentUpon>frmNCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForm\frmSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForm\frmSP.Designer.cs">
+      <DependentUpon>frmSP.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
@@ -132,14 +159,26 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ChildForm\frmDanhSachHSX.resx">
+      <DependentUpon>frmDanhSachHSX.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChildForm\frmDanhSachLSP.resx">
       <DependentUpon>frmDanhSachLSP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChildForm\frmDanhSachNCC.resx">
       <DependentUpon>frmDanhSachNCC.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ChildForm\frmDanhSachSP.resx">
+      <DependentUpon>frmDanhSachSP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForm\frmHSX.resx">
+      <DependentUpon>frmHSX.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChildForm\frmNCC.resx">
       <DependentUpon>frmNCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForm\frmSP.resx">
+      <DependentUpon>frmSP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>

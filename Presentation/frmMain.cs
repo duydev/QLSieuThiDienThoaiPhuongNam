@@ -98,12 +98,32 @@ namespace Presentation
 
         private void btnDanhSachHSX_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
+            frmDanhSachHSX frm = new frmDanhSachHSX();
+            frm.MdiParent = this;
+            frm.Show();
         }
 
-        private void btnThemHSX_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void btnHSX_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
+            frmHSX frm = new frmHSX();
+            frm.MdiParent = this;
+            frm.Show();
+            frm.Focus();
+        }
 
+        private void btnDanhSachSP_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmDanhSachSP frm = new frmDanhSachSP();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void btnThemSP_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmSP frm = new frmSP();
+            frm.MdiParent = this;
+            frm.Show();
+            frm.Focus();
         }
     }
 }

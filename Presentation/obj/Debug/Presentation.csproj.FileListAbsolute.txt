@@ -97,3 +97,13 @@ C:\Users\DuyDev\Documents\Visual Studio 2015\Projects\QLSieuThiDienThoaiPhuongNa
 C:\Users\DuyDev\Documents\Visual Studio 2015\Projects\QLSieuThiDienThoaiPhuongNam\Presentation\obj\Debug\Presentation.application
 C:\Users\DuyDev\Documents\Visual Studio 2015\Projects\QLSieuThiDienThoaiPhuongNam\Presentation\obj\Debug\Presentation.exe
 C:\Users\DuyDev\Documents\Visual Studio 2015\Projects\QLSieuThiDienThoaiPhuongNam\Presentation\obj\Debug\Presentation.pdb
+C:\Users\DuyDev\Documents\Visual Studio 2015\Projects\QLSieuThiDienThoaiPhuongNam\Presentation\obj\Debug\Presentation.frmDanhSachHSX.resources
+C:\Users\DuyDev\Documents\Visual Studio 2015\Projects\QLSieuThiDienThoaiPhuongNam\Presentation\obj\Debug\Presentation.frmHSX.resources
+C:\Users\DuyDev\Documents\Visual Studio 2015\Projects\QLSieuThiDienThoaiPhuongNam\Presentation\obj\Debug\Presentation.frmSP.resources
+C:\Users\DuyDev\Documents\Visual Studio 2015\Projects\QLSieuThiDienThoaiPhuongNam\Presentation\obj\Debug\Presentation.frmDanhSachSP.resources
+C:\Users\DuyDev\Documents\Visual Studio 2015\Projects\QLSieuThiDienThoaiPhuongNam\Presentation\bin\Debug\DevExpress.XtraRichEdit.v15.1.dll
+C:\Users\DuyDev\Documents\Visual Studio 2015\Projects\QLSieuThiDienThoaiPhuongNam\Presentation\bin\Debug\DevExpress.XtraRichEdit.v15.1.xml
+C:\Users\DuyDev\Documents\Visual Studio 2015\Projects\QLSieuThiDienThoaiPhuongNam\Presentation\bin\Debug\de\DevExpress.XtraRichEdit.v15.1.resources.dll
+C:\Users\DuyDev\Documents\Visual Studio 2015\Projects\QLSieuThiDienThoaiPhuongNam\Presentation\bin\Debug\es\DevExpress.XtraRichEdit.v15.1.resources.dll
+C:\Users\DuyDev\Documents\Visual Studio 2015\Projects\QLSieuThiDienThoaiPhuongNam\Presentation\bin\Debug\ja\DevExpress.XtraRichEdit.v15.1.resources.dll
+C:\Users\DuyDev\Documents\Visual Studio 2015\Projects\QLSieuThiDienThoaiPhuongNam\Presentation\bin\Debug\ru\DevExpress.XtraRichEdit.v15.1.resources.dll

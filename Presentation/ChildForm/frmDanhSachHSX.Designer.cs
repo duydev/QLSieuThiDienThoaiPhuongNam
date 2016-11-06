@@ -1,6 +1,6 @@
 ﻿namespace Presentation
 {
-    partial class frmDanhSachLSP
+    partial class frmDanhSachHSX
     {
         /// <summary>
         /// Required designer variable.
@@ -184,8 +184,8 @@
             // 
             // gridColumn1
             // 
-            this.gridColumn1.Caption = "Mã loại";
-            this.gridColumn1.FieldName = "MaSP";
+            this.gridColumn1.Caption = "Mã HSX";
+            this.gridColumn1.FieldName = "MaHSX";
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.Visible = true;
             this.gridColumn1.VisibleIndex = 0;
@@ -219,7 +219,7 @@
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
-            // frmDanhSachLSP
+            // frmDanhSachHSX
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -229,9 +229,9 @@
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
-            this.Name = "frmDanhSachLSP";
-            this.Text = "Danh Sách Loại Sản Phẩm";
-            this.Load += new System.EventHandler(this.frmDanhSachLSP_Load);
+            this.Name = "frmDanhSachHSX";
+            this.Text = "Danh Sách Hãng Sản Xuất";
+            this.Load += new System.EventHandler(this.frmDanhSachHSX_Load);
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
