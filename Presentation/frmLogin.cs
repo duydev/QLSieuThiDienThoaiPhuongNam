@@ -41,5 +41,11 @@ namespace Presentation
             t.SetApartmentState(ApartmentState.STA);
             t.Start();
         }
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+            // Auto login
+            btnDangNhap.PerformClick();
+        }
     }
 }

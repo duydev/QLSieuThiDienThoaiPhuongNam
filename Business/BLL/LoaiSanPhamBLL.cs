@@ -20,5 +20,20 @@ namespace Business.BLL
         {
             return lspDAL.Lay(MaLSP);
         }
+
+        public void Them(LoaiSanPham item)
+        {
+            lspDAL.Them(item);
+        }
+
+        public void Sua(LoaiSanPham item)
+        {
+            lspDAL.Sua(item);
+        }
+
+        public void Xoa(int MaLSP)
+        {
+            lspDAL.Xoa(MaLSP);
+        }
     }
 }

@@ -16,6 +16,7 @@ namespace Presentation
     {
         private TaiKhoan _tk = null;
         private NhanVien _nv = null;
+        private DateTime _dn = DateTime.MinValue;
 
         public frmMain()
         {
@@ -34,6 +35,7 @@ namespace Presentation
 
             _tk = TaiKhoanBLL.TaiKhoanDaDangNhap();
             _nv = _tk.NhanVien;
+            _dn = DateTime.Now;
 
             txtTenNhanVien.Caption = "Nhân viên: " + _nv.Ten;
             txtQuyen.Caption = "Vai trò: " + _tk.PhanQuyen.Ten;
@@ -63,6 +65,20 @@ namespace Presentation
             frmDanhSachLSP frm = new frmDanhSachLSP();
             frm.MdiParent = this;
             frm.Show();
+        }
+
+        private void btnThemLSP_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmLSP frm = new frmLSP();
+            frm.MdiParent = this;
+            frm.Show();
+            frm.Focus();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            TimeSpan diff = DateTime.Now - _dn;
+            txtThoiGianSuDung.Caption = string.Format("Thời gian sử dụng: {0} giờ {1} phút {2} giây.", diff.Hours, diff.Minutes, diff.Seconds);
         }
     }
 }

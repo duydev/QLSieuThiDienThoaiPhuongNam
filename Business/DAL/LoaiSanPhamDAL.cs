@@ -12,12 +12,37 @@ namespace Business.DAL
 
         public List<LoaiSanPham> LayDanhSach()
         {
-            return db.LoaiSanPham.ToList();
+            // AsNoTracking la de detach ra khoi dbcontext
+            return db.LoaiSanPham.AsNoTracking().ToList();
         }
 
         public LoaiSanPham Lay(int MaLSP)
         {
-            return db.LoaiSanPham.SingleOrDefault(a => a.MaLSP == MaLSP);
+            var item = db.LoaiSanPham.AsNoTracking().SingleOrDefault(a => a.MaLSP == MaLSP);
+            return item;
+        }
+
+        public void Them(LoaiSanPham item)
+        {
+            db.LoaiSanPham.Add(item);
+            db.SaveChanges();
+        }
+
+        public void Sua(LoaiSanPham item)
+        {
+            db.LoaiSanPham.Attach(item);
+            db.Entry(item).State = System.Data.Entity.EntityState.Modified;
+            db.SaveChanges();
+        }
+
+        public void Xoa(int MaLSP)
+        {
+            var item = db.LoaiSanPham.SingleOrDefault(a => a.MaLSP == MaLSP);
+            if(item != null)
+            {
+                db.LoaiSanPham.Remove(item);
+                db.SaveChanges();
+            }
         }
 
     }

@@ -91,3 +91,7 @@ C:\Users\DuyDev\Documents\Visual Studio 2015\Projects\QLSieuThiDienThoaiPhuongNa
 C:\Users\DuyDev\Documents\Visual Studio 2015\Projects\QLSieuThiDienThoaiPhuongNam\Presentation\bin\Debug\ru\DevExpress.Office.v15.1.Core.resources.dll
 C:\Users\DuyDev\Documents\Visual Studio 2015\Projects\QLSieuThiDienThoaiPhuongNam\Presentation\obj\Debug\Presentation.frmDanhSachLSP.resources
 C:\Users\DuyDev\Documents\Visual Studio 2015\Projects\QLSieuThiDienThoaiPhuongNam\Presentation\obj\Debug\Presentation.frmLSP.resources
+C:\Users\DuyDev\Documents\Visual Studio 2015\Projects\QLSieuThiDienThoaiPhuongNam\Presentation\bin\Debug\Presentation.exe.manifest
+C:\Users\DuyDev\Documents\Visual Studio 2015\Projects\QLSieuThiDienThoaiPhuongNam\Presentation\bin\Debug\Presentation.application
+C:\Users\DuyDev\Documents\Visual Studio 2015\Projects\QLSieuThiDienThoaiPhuongNam\Presentation\obj\Debug\Presentation.exe.manifest
+C:\Users\DuyDev\Documents\Visual Studio 2015\Projects\QLSieuThiDienThoaiPhuongNam\Presentation\obj\Debug\Presentation.application
