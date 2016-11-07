@@ -39,6 +39,10 @@ namespace Presentation
 
             txtTenNhanVien.Caption = "Nhân viên: " + _nv.Ten;
             txtQuyen.Caption = "Vai trò: " + _tk.PhanQuyen.Ten;
+
+            // Mo san form
+            btnDanhSachDDH.PerformClick();
+
         }
 
         private void btnDangXuat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -124,6 +128,13 @@ namespace Presentation
             frm.MdiParent = this;
             frm.Show();
             frm.Focus();
+        }
+
+        private void btnDanhSachDDH_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmDDH frm = new frmDDH();
+            frm.MdiParent = this;
+            frm.Show();
         }
     }
 }

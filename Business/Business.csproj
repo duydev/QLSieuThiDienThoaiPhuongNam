@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\DonDatHangBLL.cs" />
     <Compile Include="BLL\SanPhamBLL.cs" />
     <Compile Include="BLL\HangSanXuatBLL.cs" />
     <Compile Include="BLL\NhaCungCapBLL.cs" />
@@ -87,6 +88,7 @@
     <Compile Include="DAL\HangSanXuat.cs">
       <DependentUpon>DBPhuongNam.tt</DependentUpon>
     </Compile>
+    <Compile Include="DAL\DonDatHangDAL.cs" />
     <Compile Include="DAL\SanPhamDAL.cs" />
     <Compile Include="DAL\KhachHang.cs">
       <DependentUpon>DBPhuongNam.tt</DependentUpon>

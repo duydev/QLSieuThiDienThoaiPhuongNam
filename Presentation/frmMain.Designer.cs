@@ -37,7 +37,7 @@
             this.btnTaiKhoanCuaToi = new DevExpress.XtraBars.BarButtonItem();
             this.btnDanhSachSPSapHet = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnDanhSachDDH = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             this.btnDanhSachLSP = new DevExpress.XtraBars.BarButtonItem();
@@ -78,7 +78,7 @@
             this.btnTaiKhoanCuaToi,
             this.btnDanhSachSPSapHet,
             this.barButtonItem2,
-            this.barButtonItem3,
+            this.btnDanhSachDDH,
             this.barButtonItem4,
             this.barButtonItem5,
             this.btnDanhSachLSP,
@@ -147,13 +147,14 @@
             this.barButtonItem2.Name = "barButtonItem2";
             this.barButtonItem2.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
-            // barButtonItem3
+            // btnDanhSachDDH
             // 
-            this.barButtonItem3.Caption = "Danh Sách";
-            this.barButtonItem3.Glyph = global::Presentation.Properties.Resources.list;
-            this.barButtonItem3.Id = 7;
-            this.barButtonItem3.Name = "barButtonItem3";
-            this.barButtonItem3.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnDanhSachDDH.Caption = "Danh Sách";
+            this.btnDanhSachDDH.Glyph = global::Presentation.Properties.Resources.list;
+            this.btnDanhSachDDH.Id = 7;
+            this.btnDanhSachDDH.Name = "btnDanhSachDDH";
+            this.btnDanhSachDDH.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnDanhSachDDH.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDanhSachDDH_ItemClick);
             // 
             // barButtonItem4
             // 
@@ -297,7 +298,7 @@
             // 
             // ribbonPageGroup3
             // 
-            this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem3);
+            this.ribbonPageGroup3.ItemLinks.Add(this.btnDanhSachDDH);
             this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem2);
             this.ribbonPageGroup3.Name = "ribbonPageGroup3";
             this.ribbonPageGroup3.Text = "Đơn Đặt Hàng";
@@ -397,7 +398,7 @@
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage2;
         private DevExpress.XtraBars.BarButtonItem barButtonItem2;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem3;
+        private DevExpress.XtraBars.BarButtonItem btnDanhSachDDH;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup5;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup6;
